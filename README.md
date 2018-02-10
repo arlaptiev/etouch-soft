@@ -1,6 +1,12 @@
 # etouch-soft
 Arduino based eTouch project
 
+The purpose of the project is to develop the software for:
+- enabling a user to upload the specific kinds of files on the SD storage of the eTouch
+- editing the uploaded files to fit braille syntaxis
+- enabling a user to manipulate the device via control buttons
+- translating the files' data into binary code and passing it to the mechanical part of the device
+
 ## Useful resources below:
 
 ### Pinouts:
