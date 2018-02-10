@@ -1,5 +1,5 @@
 
-/* Name: BrailleDisplay.ino
+/* Name: eTouch_init.ino
  * Authors: Artem Laptiev, Denis ____
  * Creation Date: 2018-02-10
  * Tabsize: 2
