@@ -1,23 +1,32 @@
-String responseHTML = ""
-                      "<!DOCTYPE html><html><head><title>Braille Display</title></head><body>"
-                      "<center><h1>Braille Display</h1><br>"
-                      "<form name='form' action='code' method='post'>"
-                      "<p><b>Text:</b><br><input type='text' name='text' size='40'></p>"
-                      "<p><input type='submit' value='Translate'></p></form>"
-                      "<form action='upload' method='post' enctype='multipart/form-data'>"
-                      "Select image to upload:<br>"
-                      "<input type='file' name='name' id='fileToUpload'><br>"
-                      "<input type='submit' value='Upload File' name='submit'></form>"
-                      "</center></body></html>";
+/* Name: webServer.ino
+ * Authors: Artem Laptiev
+ */
+
+/*
+General Description:
+This file handles the webServer and file uploading
+*/
+
+
+/*  Home page HTML 
+ *  Try to create reading String from external text file
+*/
+String responseHTML = "<!DOCTYPE html><html><head><title>eTouch</title></head><body style='font-family:Tahoma;color:#4d4d4d;'><div style='position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(to bottom right, #31f599, #53a3a6);)'></div><div style='left:0;top:0;position:absolute;width:100%;height:30%;background:transparent;'><p style='position:absolute;width:100%;margin:auto;text-align:center;font-size:1400%;font-weight:bold;'>ETOUCH</p></div><form name='form' action='code' method='post'><div style='left:0;top:30%;position:absolute;width:100%;height:55%;background:linear-gradient(to bottom right, #e6e6e6, #ffffff);'><textarea type='text' name='text' placeholder='Type text...' style='background-color:transparent;border:none;width:60%;height:100%;font-family:inherit;padding:5% 20%;font-size:30px;'></textarea></div><div style='left:0;top:80%;position:absolute;width:100%;height:15%;background-color:transparent;z-index:9;'><input type='submit' value='SEND' style='position:absolute;left:30%;width:40%;height:100%;border:none;font-family:inherit;color:#ffffff;font-size:500%;background-color:#4d4d4d;'></div></form><!--<div style='left:0;top:85%;position:absolute;width:100%;height:25%;background:transparent;'></div><form action='upload' method='post' enctype='multipart/form-data'>Select image to upload:<br><input type='file' name='name' id='fileToUpload'><br><input type='submit' value='Upload file' name='submit'></form>--></center></body></html></form><!--<div style='left:0;top:85%;position:absolute;width:100%;height:25%;background:transparent;'></div><form action='upload' method='post' enctype='multipart/form-data'>Select image to upload:<br><input type='file' name='name' id='fileToUpload'><br><input type='submit' value='Upload file' name='submit'></form>--></center></body></html>";
 
 void webServerSetup() {
   WiFi.mode(WIFI_AP);
   WiFi.softAPConfig(apIP, apIP, IPAddress(255, 255, 255, 0));
-  WiFi.softAP("Braille Display");
-  // if DNSServer is started with "*" for domain name, it will reply with
-  // provided IP to all DNS request
+  WiFi.softAP("eTouch");
+  
+/* if DNSServer is started with "*" for domain name, it will reply with
+ * provided IP to all DNS request */
   dnsServer.start(DNS_PORT, "*", apIP);
 
+/* 
+ * File uploading
+ * Not finished
+ */
+ 
   SPIFFS.begin();                                          // Start the SPI Flash Files System
 
   webServer.on("/upload", HTTP_GET, []() {                 // if the client requests the upload page
@@ -28,12 +37,16 @@ void webServerSetup() {
     [](){ webServer.send(200); },                          // Send status 200 (OK) to tell the client we are ready to receive
     handleFileUpload                                       // Receive and save the file
   );
+  
+
+/* Home page */
   webServer.onNotFound([]() {
     handleRoot();
     if (!handleFileRead(webServer.uri()))                  // send it if it exists
       webServer.send(404, "text/plain", "404: Not Found");
   });
 
+/* Receiving instant text to translate */
   webServer.on("/code", codeTranslate);
   webServer.begin();
 }
@@ -50,7 +63,12 @@ void codeTranslate() {
   handleRoot();
 }
 
-/* Below: to be used for file handling. */
+
+/* 
+ * Below: to be used for file handling. 
+ * Not finished
+ */
+ 
 String getContentType(String filename) { // convert the file extension to the MIME type
   if (filename.endsWith(".html")) return "text/html";
   else if (filename.endsWith(".txt")) return "text/plain";
@@ -100,4 +118,3 @@ void handleFileUpload(){ // upload a new file to the SPIFFS
     }
   }
 }
-
