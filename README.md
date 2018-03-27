@@ -19,10 +19,11 @@ http://arduino.ru/Tutorial/registr_74HC595
 ### SD card:
 https://stackoverflow.com/questions/44225379/esp8266-12e-nodemcu-1-0-pin-mapping-for-micro-sd-card
 https://forum.arduino.cc/index.php?topic=508777.0
+http://www.avislab.com/blog/esp8266-nodemcu-file_ru/
+http://www.avislab.com/blog/esp8266-nodemcu-start_ru/
+
 
 ### Web server and file upload handling:
 https://github.com/esp8266/Arduino/blob/master/libraries/ESP8266WebServer/examples/SDWebServer/SDWebServer.ino
 
 
-http://www.avislab.com/blog/esp8266-nodemcu-file_ru/
-http://www.avislab.com/blog/esp8266-nodemcu-start_ru/
