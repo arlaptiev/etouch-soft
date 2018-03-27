@@ -22,3 +22,7 @@ https://forum.arduino.cc/index.php?topic=508777.0
 
 ### Web server and file upload handling:
 https://github.com/esp8266/Arduino/blob/master/libraries/ESP8266WebServer/examples/SDWebServer/SDWebServer.ino
+
+
+http://www.avislab.com/blog/esp8266-nodemcu-file_ru/
+http://www.avislab.com/blog/esp8266-nodemcu-start_ru/
