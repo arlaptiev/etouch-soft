@@ -26,4 +26,7 @@ http://www.avislab.com/blog/esp8266-nodemcu-start_ru/
 ### Web server and file upload handling:
 https://github.com/esp8266/Arduino/blob/master/libraries/ESP8266WebServer/examples/SDWebServer/SDWebServer.ino
 
+### Stepping motor:
+https://howtomechatronics.com/tutorials/arduino/how-to-control-stepper-motor-with-a4988-driver-and-arduino/
+
 
