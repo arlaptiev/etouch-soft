@@ -1,6 +1,6 @@
 
 /* Name: eTouch_init.ino
- * Authors: Artem Laptiev, Denis ____
+ * Authors: Artem Laptiev
  * Creation Date: 2018-02-10
  * Tabsize: 2
 
