@@ -1,4 +1,4 @@
-# etouch-soft
+# etouch-soft [outdated]
 Arduino based eTouch project
 
 The purpose of the project is to develop the software for:
