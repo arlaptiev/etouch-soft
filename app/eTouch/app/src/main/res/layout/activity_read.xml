@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReadActivity"
+    android:background="@drawable/backgroundread">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="eTouch"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24dp"
+        app:fontFamily="@font/inter_ui_bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="29dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="40dp"
+        android:rotation="45"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cross" />
+
+    <RelativeLayout
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:id="@+id/img_autoscroll"
+            android:translationZ="10dp"
+            android:layout_width="22dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="13dp"
+            android:layout_height="32dp"
+            app:srcCompat="@drawable/play_grey" />
+
+        <Button
+            android:id="@+id/btn_autoscroll"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/openbutton"
+            android:fontFamily="@font/inter_ui_regular"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout2"
+            android:orientation="vertical"
+            android:layout_width="160dp"
+            android:layout_height="300dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/box"
+            android:elevation="1dp"
+            android:translationZ="8dp">
+
+            <Button
+                android:id="@+id/btn_back"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@android:color/transparent"/>
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="196dp"
+                android:layout_height="112dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/left_arrow"
+                android:translationZ="20dp" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="140dp"
+                android:layout_height="26dp"
+                android:layout_below="@+id/imageView4"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:text="Back"
+                android:fontFamily="@font/inter_ui_medium"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:translationZ="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout"
+            android:orientation="vertical"
+            android:layout_width="160dp"
+            android:layout_height="300dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/box"
+            android:elevation="1dp"
+            android:translationZ="8dp">
+
+            <Button
+                android:id="@+id/btn_forward"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@android:color/transparent"/>
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="196dp"
+                android:layout_height="112dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/right_arrow"
+                android:translationZ="20dp" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="140dp"
+                android:layout_height="26dp"
+                android:layout_below="@+id/imageView5"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:fontFamily="@font/inter_ui_medium"
+                android:text="Forward"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:translationZ="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
