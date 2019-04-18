@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: eu.basicairdata:bluetoothhelper-1.0.5">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/bluetoothhelper-1.0.5.aar/97e4c28b9814c2d0cf4e6127c5086d73/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/bluetoothhelper-1.0.5.aar/97e4c28b9814c2d0cf4e6127c5086d73/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/eu.basicairdata/bluetoothhelper/1.0.5/e4687dce55656d754d08aa41f6448091f5dc3882/bluetoothhelper-1.0.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

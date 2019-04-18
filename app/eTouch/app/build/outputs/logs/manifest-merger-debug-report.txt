@@ -1,0 +1,203 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\ArtemLaptiev\AndroidStudioProjects\eTouch\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from C:\Users\ArtemLaptiev\AndroidStudioProjects\eTouch\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from C:\Users\ArtemLaptiev\AndroidStudioProjects\eTouch\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from C:\Users\ArtemLaptiev\AndroidStudioProjects\eTouch\app\src\main\AndroidManifest.xml:2:1-29:12
+MERGED from [com.android.support:design:28.0.0] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\9e7a52f64ef9bb1ac9b21ea946681cbb\AndroidManifest.xml:17:1-24:12
+MERGED from [eu.basicairdata:bluetoothhelper:1.0.5] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\bluetoothhelper-1.0.5.aar\97e4c28b9814c2d0cf4e6127c5086d73\AndroidManifest.xml:2:1-17:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\05a151e05682cb3d94d9711e5ea027fe\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\e32959cd1a9462caac5521d6a2b477fa\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\a60c41065981b98600d3d8575e98cdcc\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0.aar\78c0098a50114e9ed72596bddd773bf3\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\e7a510ed07baebd00d93c2b630a822a8\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\71bd5a37a23987291f242e8318303f14\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\139e04289dd032d1d01b491db57b2e83\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:28.0.0] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\transition-28.0.0.aar\15a28030fc0ad722a817492b189dfb1c\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\bd8080e3b8d1f9582760bb2ebf186c03\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\ddbf3b391c88abc00b57f0eef4946f87\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\9c22369d95b29392375bfbf52501326d\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\3aec96c43d41814022caf1ef4375d1ab\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\57f515e3b1ba40e47b72834bd6d5b117\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\c4bc8c559f1711b9f1a9f5293f8b664e\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\b9c58237c74077993d3c80b323c2e4e6\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\8de11e8a50ced2153407a1c950848384\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\5afec679d9c7e9ec9dc6ea0dbb208bd4\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\212fe4936fbb4c116a15abbb91d81d60\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\307f084cca77dfff1b95366d585964af\AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0.aar\0275df717940c2712b88be2233b8d042\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\6639b1fe4166e9267b27475cd2da7a28\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\31265ab0b055d4ff15820070bce84c17\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\58a6532014fa88afb06ffac4b82beacf\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\b694eadf714a2ef109b5e2512381c542\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\0cd557c5819bb53dbbc06f73bbca6157\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\fb86ced499cf1c909b858059dba4f346\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\c8682a985ac89930fa101ba9fd61c2b5\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\5b904b2fd4c184676eaba482632e16f4\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\9cc090b6a873ae5efec89bf691daf66f\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\2456ba9c62823fa07cbb8a3b629ed46c\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Users\ArtemLaptiev\AndroidStudioProjects\eTouch\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from C:\Users\ArtemLaptiev\AndroidStudioProjects\eTouch\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from C:\Users\ArtemLaptiev\AndroidStudioProjects\eTouch\app\src\main\AndroidManifest.xml:2:1-29:12
+	package
+		ADDED from C:\Users\ArtemLaptiev\AndroidStudioProjects\eTouch\app\src\main\AndroidManifest.xml:3:5-39
+		INJECTED from C:\Users\ArtemLaptiev\AndroidStudioProjects\eTouch\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\ArtemLaptiev\AndroidStudioProjects\eTouch\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\ArtemLaptiev\AndroidStudioProjects\eTouch\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\ArtemLaptiev\AndroidStudioProjects\eTouch\app\src\main\AndroidManifest.xml:2:1-29:12
+		INJECTED from C:\Users\ArtemLaptiev\AndroidStudioProjects\eTouch\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\ArtemLaptiev\AndroidStudioProjects\eTouch\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\ArtemLaptiev\AndroidStudioProjects\eTouch\app\src\main\AndroidManifest.xml:2:1-29:12
+		INJECTED from C:\Users\ArtemLaptiev\AndroidStudioProjects\eTouch\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\ArtemLaptiev\AndroidStudioProjects\eTouch\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from C:\Users\ArtemLaptiev\AndroidStudioProjects\eTouch\app\src\main\AndroidManifest.xml:5:5-75
+	android:name
+		ADDED from C:\Users\ArtemLaptiev\AndroidStudioProjects\eTouch\app\src\main\AndroidManifest.xml:5:22-73
+uses-permission#android.permission.BLUETOOTH
+ADDED from C:\Users\ArtemLaptiev\AndroidStudioProjects\eTouch\app\src\main\AndroidManifest.xml:6:5-69
+	android:name
+		ADDED from C:\Users\ArtemLaptiev\AndroidStudioProjects\eTouch\app\src\main\AndroidManifest.xml:6:22-67
+application
+ADDED from C:\Users\ArtemLaptiev\AndroidStudioProjects\eTouch\app\src\main\AndroidManifest.xml:8:5-27:19
+MERGED from [com.android.support:design:28.0.0] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\9e7a52f64ef9bb1ac9b21ea946681cbb\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:28.0.0] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\9e7a52f64ef9bb1ac9b21ea946681cbb\AndroidManifest.xml:22:5-20
+MERGED from [eu.basicairdata:bluetoothhelper:1.0.5] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\bluetoothhelper-1.0.5.aar\97e4c28b9814c2d0cf4e6127c5086d73\AndroidManifest.xml:11:5-15:19
+MERGED from [eu.basicairdata:bluetoothhelper:1.0.5] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\bluetoothhelper-1.0.5.aar\97e4c28b9814c2d0cf4e6127c5086d73\AndroidManifest.xml:11:5-15:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\e32959cd1a9462caac5521d6a2b477fa\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\e32959cd1a9462caac5521d6a2b477fa\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\212fe4936fbb4c116a15abbb91d81d60\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\212fe4936fbb4c116a15abbb91d81d60\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\307f084cca77dfff1b95366d585964af\AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\307f084cca77dfff1b95366d585964af\AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\212fe4936fbb4c116a15abbb91d81d60\AndroidManifest.xml:22:18-91
+	android:supportsRtl
+		ADDED from C:\Users\ArtemLaptiev\AndroidStudioProjects\eTouch\app\src\main\AndroidManifest.xml:14:9-35
+	android:label
+		ADDED from C:\Users\ArtemLaptiev\AndroidStudioProjects\eTouch\app\src\main\AndroidManifest.xml:12:9-41
+	android:roundIcon
+		ADDED from C:\Users\ArtemLaptiev\AndroidStudioProjects\eTouch\app\src\main\AndroidManifest.xml:13:9-54
+	android:icon
+		ADDED from C:\Users\ArtemLaptiev\AndroidStudioProjects\eTouch\app\src\main\AndroidManifest.xml:11:9-43
+	android:allowBackup
+		ADDED from C:\Users\ArtemLaptiev\AndroidStudioProjects\eTouch\app\src\main\AndroidManifest.xml:10:9-35
+	android:theme
+		ADDED from C:\Users\ArtemLaptiev\AndroidStudioProjects\eTouch\app\src\main\AndroidManifest.xml:15:9-40
+	android:name
+		ADDED from C:\Users\ArtemLaptiev\AndroidStudioProjects\eTouch\app\src\main\AndroidManifest.xml:9:9-44
+activity#com.etouchproject.etouch.MainActivity
+ADDED from C:\Users\ArtemLaptiev\AndroidStudioProjects\eTouch\app\src\main\AndroidManifest.xml:16:9-22:20
+	android:screenOrientation
+		ADDED from C:\Users\ArtemLaptiev\AndroidStudioProjects\eTouch\app\src\main\AndroidManifest.xml:16:48-84
+	android:name
+		ADDED from C:\Users\ArtemLaptiev\AndroidStudioProjects\eTouch\app\src\main\AndroidManifest.xml:16:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\ArtemLaptiev\AndroidStudioProjects\eTouch\app\src\main\AndroidManifest.xml:17:13-21:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\ArtemLaptiev\AndroidStudioProjects\eTouch\app\src\main\AndroidManifest.xml:18:17-69
+	android:name
+		ADDED from C:\Users\ArtemLaptiev\AndroidStudioProjects\eTouch\app\src\main\AndroidManifest.xml:18:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\ArtemLaptiev\AndroidStudioProjects\eTouch\app\src\main\AndroidManifest.xml:20:17-77
+	android:name
+		ADDED from C:\Users\ArtemLaptiev\AndroidStudioProjects\eTouch\app\src\main\AndroidManifest.xml:20:27-74
+activity#com.etouchproject.etouch.HomeActivity
+ADDED from C:\Users\ArtemLaptiev\AndroidStudioProjects\eTouch\app\src\main\AndroidManifest.xml:23:9-87
+	android:screenOrientation
+		ADDED from C:\Users\ArtemLaptiev\AndroidStudioProjects\eTouch\app\src\main\AndroidManifest.xml:23:48-84
+	android:name
+		ADDED from C:\Users\ArtemLaptiev\AndroidStudioProjects\eTouch\app\src\main\AndroidManifest.xml:23:19-47
+activity#com.etouchproject.etouch.UploadActivity
+ADDED from C:\Users\ArtemLaptiev\AndroidStudioProjects\eTouch\app\src\main\AndroidManifest.xml:24:9-89
+	android:screenOrientation
+		ADDED from C:\Users\ArtemLaptiev\AndroidStudioProjects\eTouch\app\src\main\AndroidManifest.xml:24:50-86
+	android:name
+		ADDED from C:\Users\ArtemLaptiev\AndroidStudioProjects\eTouch\app\src\main\AndroidManifest.xml:24:19-49
+activity#com.etouchproject.etouch.ReadActivity
+ADDED from C:\Users\ArtemLaptiev\AndroidStudioProjects\eTouch\app\src\main\AndroidManifest.xml:25:9-87
+	android:screenOrientation
+		ADDED from C:\Users\ArtemLaptiev\AndroidStudioProjects\eTouch\app\src\main\AndroidManifest.xml:25:48-84
+	android:name
+		ADDED from C:\Users\ArtemLaptiev\AndroidStudioProjects\eTouch\app\src\main\AndroidManifest.xml:25:19-47
+uses-sdk
+INJECTED from C:\Users\ArtemLaptiev\AndroidStudioProjects\eTouch\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\ArtemLaptiev\AndroidStudioProjects\eTouch\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\ArtemLaptiev\AndroidStudioProjects\eTouch\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:design:28.0.0] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\9e7a52f64ef9bb1ac9b21ea946681cbb\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:28.0.0] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\9e7a52f64ef9bb1ac9b21ea946681cbb\AndroidManifest.xml:20:5-44
+MERGED from [eu.basicairdata:bluetoothhelper:1.0.5] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\bluetoothhelper-1.0.5.aar\97e4c28b9814c2d0cf4e6127c5086d73\AndroidManifest.xml:7:5-9:41
+MERGED from [eu.basicairdata:bluetoothhelper:1.0.5] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\bluetoothhelper-1.0.5.aar\97e4c28b9814c2d0cf4e6127c5086d73\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\05a151e05682cb3d94d9711e5ea027fe\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\05a151e05682cb3d94d9711e5ea027fe\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\e32959cd1a9462caac5521d6a2b477fa\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\e32959cd1a9462caac5521d6a2b477fa\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\a60c41065981b98600d3d8575e98cdcc\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\a60c41065981b98600d3d8575e98cdcc\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0.aar\78c0098a50114e9ed72596bddd773bf3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0.aar\78c0098a50114e9ed72596bddd773bf3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\e7a510ed07baebd00d93c2b630a822a8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\e7a510ed07baebd00d93c2b630a822a8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\71bd5a37a23987291f242e8318303f14\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\71bd5a37a23987291f242e8318303f14\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\139e04289dd032d1d01b491db57b2e83\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\139e04289dd032d1d01b491db57b2e83\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\transition-28.0.0.aar\15a28030fc0ad722a817492b189dfb1c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\transition-28.0.0.aar\15a28030fc0ad722a817492b189dfb1c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\bd8080e3b8d1f9582760bb2ebf186c03\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\bd8080e3b8d1f9582760bb2ebf186c03\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\ddbf3b391c88abc00b57f0eef4946f87\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\ddbf3b391c88abc00b57f0eef4946f87\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\9c22369d95b29392375bfbf52501326d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\9c22369d95b29392375bfbf52501326d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\3aec96c43d41814022caf1ef4375d1ab\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\3aec96c43d41814022caf1ef4375d1ab\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\57f515e3b1ba40e47b72834bd6d5b117\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\57f515e3b1ba40e47b72834bd6d5b117\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\c4bc8c559f1711b9f1a9f5293f8b664e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\c4bc8c559f1711b9f1a9f5293f8b664e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\b9c58237c74077993d3c80b323c2e4e6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\b9c58237c74077993d3c80b323c2e4e6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\8de11e8a50ced2153407a1c950848384\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\8de11e8a50ced2153407a1c950848384\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\5afec679d9c7e9ec9dc6ea0dbb208bd4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\5afec679d9c7e9ec9dc6ea0dbb208bd4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\212fe4936fbb4c116a15abbb91d81d60\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\212fe4936fbb4c116a15abbb91d81d60\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\307f084cca77dfff1b95366d585964af\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\307f084cca77dfff1b95366d585964af\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0.aar\0275df717940c2712b88be2233b8d042\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0.aar\0275df717940c2712b88be2233b8d042\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\6639b1fe4166e9267b27475cd2da7a28\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\6639b1fe4166e9267b27475cd2da7a28\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\31265ab0b055d4ff15820070bce84c17\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\31265ab0b055d4ff15820070bce84c17\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\58a6532014fa88afb06ffac4b82beacf\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\58a6532014fa88afb06ffac4b82beacf\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\b694eadf714a2ef109b5e2512381c542\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\b694eadf714a2ef109b5e2512381c542\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\0cd557c5819bb53dbbc06f73bbca6157\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\0cd557c5819bb53dbbc06f73bbca6157\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\fb86ced499cf1c909b858059dba4f346\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\fb86ced499cf1c909b858059dba4f346\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\c8682a985ac89930fa101ba9fd61c2b5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\c8682a985ac89930fa101ba9fd61c2b5\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\5b904b2fd4c184676eaba482632e16f4\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\5b904b2fd4c184676eaba482632e16f4\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\9cc090b6a873ae5efec89bf691daf66f\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\9cc090b6a873ae5efec89bf691daf66f\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\2456ba9c62823fa07cbb8a3b629ed46c\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\ArtemLaptiev\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\2456ba9c62823fa07cbb8a3b629ed46c\AndroidManifest.xml:20:5-44
+INJECTED from C:\Users\ArtemLaptiev\AndroidStudioProjects\eTouch\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\ArtemLaptiev\AndroidStudioProjects\eTouch\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\ArtemLaptiev\AndroidStudioProjects\eTouch\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\ArtemLaptiev\AndroidStudioProjects\eTouch\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\ArtemLaptiev\AndroidStudioProjects\eTouch\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\ArtemLaptiev\AndroidStudioProjects\eTouch\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\ArtemLaptiev\AndroidStudioProjects\eTouch\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\ArtemLaptiev\AndroidStudioProjects\eTouch\app\src\main\AndroidManifest.xml
