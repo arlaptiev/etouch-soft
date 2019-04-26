@@ -1,19 +1,22 @@
-![eTouch device](https://raw.githubusercontent.com/arlaptiev/etouch-soft/master/device.png)
-Arduino based eTouch project.
+![eTouch device](https://raw.githubusercontent.com/arlaptiev/etouch-soft/master/device.png =250x)
+# Arduino based eTouch project
 
 eTouch is an affordable electronic Braille reader for the blind, developed by a group of enthusiasts from Ukraine. This repo contains the software for the project.
 
-It includes:
+### Structure
+
 * the device code
     1. receives a message to be displayed from a user's phone application
     2. converts the message to Braille-corresponding binary signals
     3. drives the stepper motors to display the message in Braille
     4. handles the buttons
+
 * the android app code
     1. connects to the device's Bluetooth module
     2. navigates the user to sending the message and controlling the device
     3. reads and sends to the device the text from a local storage file
     4. intercepts the browser links as a mean of communication with Google Assistant
+
 * the DialogFlow code:
     1. a code to communicate a Google Assistant Action with the android app
     2. parses the name of the literature to read and passes it to the app
