@@ -1,4 +1,3 @@
-
 /* Name: eTouch_init.ino
  * Authors: Artem Laptiev
  * Creation Date: 2018-02-10
@@ -40,14 +39,18 @@ int clockPin = D0; //SH_CP
 int latchPin = D1; //ST_CP
 int dataPin = D2;  //DS
 /* Pins for the control buttons. */
-int forwardPin = D6; //Page up
+int forwardPin = D5; //Page up
 int forwardState = 0;
-int backwardsPin = D7; //Page down
+int backwardsPin = D6; //Page down
 int backwardsState = 0;
+int scrollPin = D7; //Autoscrolling on
+int scrollState = 0;
 
 /* Other settings. */
 byte nsymbols = 2; //Number of symbols on display
 byte displayMode = 1; //0-picking file; 1-reading text
+bool scrollOn = false; //Automatic scrolling pages
+int lastTextLine = 0; //Number the reader was at the last time he closed display
 
 
 void setup() {

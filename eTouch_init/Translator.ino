@@ -1,8 +1,16 @@
+/* Name: Translator.ino
+ * Authors: Artem Laptiev
+ */
+
+/*
+General Description:
+This file handles text execution on the display
+*/
+
+
 String text = ""; //All the text from the File
-int currentTextLine = 0; //Number the reader is at
-int lastTextLine = 0; //Number the reader was at the last time he closed display
-byte loadedRange[2] = {0,0}; 
-bool isLastCharANumber = false;
+byte loadedRange[2] = {0,0}; //? for loadLine()
+bool isLastCharANumber = false; //? for loadLine()
 
 void translatorSetup(){
   pinMode(latchPin, OUTPUT);
@@ -11,34 +19,43 @@ void translatorSetup(){
   getSymbolsReady();
 }
 
-//Setting all the symbols to work
+/* Setting all the symbols to initial status */
 void getSymbolsReady() {
   digitalWrite(latchPin, LOW);
   for (int i = 0; i < nsymbols; i++) {
-    shiftOut(dataPin, clockPin, LSBFIRST, B11111100);
+    shiftOut(dataPin, clockPin, LSBFIRST, 0);
   }
   digitalWrite(latchPin, HIGH);
 }
 
-//Writes a specific line of the File on the display
+/* Writes a given line of the text on the display */
 void executeLine(int line) {
-  //Checks if requested line is before the last line and after or equal to the first line(0)
+/* Checks if requested line is before the last line and after or equal to the first line(0) */
   if(text.length() > line*nsymbols && line > -1) {
-      lastTextLine = line; //wont work with loadLine
-      //FILE THAT THE BOOK IS FINISHED if((line + 1)*nsymbols >= text.length()) DO SMTH
+      lastTextLine = line; //udate lastTextLine
       
+/* 
+ * IF THE BOOK IS FINISHED if((line + 1)*nsymbols >= text.length()) DO SMTH 
+ * 1. turn off autoscrolling
+ * 2. go to the catalog or write 'END'
+ */
+
+/* Send binary to the cells */      
       digitalWrite(latchPin, LOW);
       for (int i = 0; i < nsymbols; i++) {
-        shiftOut(dataPin, clockPin, LSBFIRST, nAlphabet[Alphabet.indexOf(text.charAt(line*nsymbols+i))] );
+        shiftOut(dataPin, clockPin, LSBFIRST, Alphabet.indexOf(text.charAt(line*nsymbols+i)) );
       }
       digitalWrite(latchPin, HIGH);
-      
-      delay(1000);
-      executeLine(line+1);
+
+/* Does autoscrolling if On */
+      if (scrollOn == true) {
+        delay(1000);
+        executeLine(line+1);
+      }
     }
 }
 
-/*Prepares 10 lines in advance to be executed
+/* Prepares 10 lines in advance to be executed
 void loadLine(int line) {
   if (line == lastTextLine) {
     for (int i = - 50; i < 100; i++) {

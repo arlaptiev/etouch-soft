@@ -1,37 +1,55 @@
+/* Name: Buttons.ino
+ * Authors: Artem Laptiev
+ */
+
+/*
+General Description:
+This file handles all the responses to the buttons pressing, including initiating new line executions and modes changing
+*/
+
+
 bool buttonControl = true;
 
 void buttonsSetup(){
-  pinMode(forwardPin, INPUT);
-  pinMode(backwardsPin, INPUT); 
-  pinMode(D2,OUTPUT);//TEST
+  pinMode(forwardPin, INPUT_PULLUP);
+  pinMode(backwardsPin, INPUT_PULLUP);
+  pinMode(scrollPin, INPUT_PULLUP);
 }
 
 void buttonsLoop(){
   forwardState = digitalRead(forwardPin);
   backwardsState = digitalRead(backwardsPin);
-  
-  if (forwardState == 1) {
-    //executeLine(lastTextLine + 1); && buttonControl == true)
-    digitalWrite(D2, HIGH);
-    //buttonDelay();
+  scrollState = digitalRead(scrollPin);
+
+/* Turns autoscrolling on/off */
+  if (scrollState == LOW && buttonControl == true) {
+    scrollOn = !scrollOn;
+    executeLine(lastTextLine);
+    buttonDelay();
   }
-  if (forwardState == LOW) {
-    //executeLine(lastTextLine + 1); && buttonControl == true)
-    digitalWrite(D2, LOW);
-    //buttonDelay();
+
+/* Starts next line
+ *  if last line, it does nothing
+ */
+
+  if (forwardState == LOW && buttonControl == true && scrollOn == false) {
+    executeLine(lastTextLine + 1);
+    buttonDelay();
   }
-  
-  if (backwardsState == 0) {
-    //executeLine(lastTextLine - 1);
-    digitalWrite(D2, HIGH);
-    //buttonDelay();
+
+/* Starts previous line  
+ *  if first line, it does nothing
+ */
+  if (backwardsState == LOW && buttonControl == true && scrollOn == false) {
+    executeLine(lastTextLine - 1);
+    buttonDelay();
   }
 }
 
-//To not cause stack overflaw with numerous calls for function executeLine()
+/* Avoiding stack overflaw with numerous calls for function executeLine() */
 void buttonDelay(){
   buttonControl = false;
-  delay(100);
+  delay(500);
   buttonControl = true;
 }
 
