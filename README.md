@@ -1,4 +1,5 @@
-![eTouch device](https://raw.githubusercontent.com/arlaptiev/etouch-soft/master/device.png | width=250)
+<img alt="eTouch" src="device.png" width="40%">
+
 # Arduino based eTouch project
 
 eTouch is an affordable electronic Braille reader for the blind, developed by a group of enthusiasts from Ukraine. This repo contains the software for the project.
