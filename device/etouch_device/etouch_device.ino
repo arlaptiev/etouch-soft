@@ -45,7 +45,7 @@ byte nSymbols = 2; //Number of symbols on display
 /* Global variables */
 String message = ""; // All the uploaded text
 bool scrollOn = false; // State of automatic scrolling
-int lastLine = 0; //Number the reader was at the last time he closed display
+int lineToRun = 0; //Number of the line the display is to run next
 
 
 void setup() {

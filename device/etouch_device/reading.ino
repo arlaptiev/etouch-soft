@@ -45,11 +45,16 @@ void getSymbolsReady() {
 
 
 /* Writes a given line of the text on the display */
-void executeLine(int line) {
+void executeLine(int line, bool up) {
+
+  /* Is added to value sent to shift register. Adds additional 0 or 1 to the 7th output depending on the direction */
+  int dirInt = 0;
+  if(!up) {
+    dirInt = 64;
+  }
   
   /* Checks if requested line is before the last line and after or equal to the first line(0) */
   if(message.length() > line * nSymbols && line > -1) {
-      lastLine = line; //udate lastLine
       
     /* ToDo
      * IF THE BOOK IS FINISHED if((line + 1)*nsymbols >= text.length()) DO SMTH 
@@ -62,17 +67,35 @@ void executeLine(int line) {
     digitalWrite(latchPin, LOW);
     
     for (int i = 0; i < nSymbols; i++) {
-      shiftOut(dataPin, clockPin, LSBFIRST, mappedBraille.indexOf( message.charAt(line * nSymbols + i) ) );
+      shiftOut(dataPin, clockPin, LSBFIRST, mappedBraille.indexOf( message.charAt(line * nSymbols + i) ) + dirInt );
     }
     
     digitalWrite(latchPin, HIGH);
+    
+
+    lineToRun = line + 1; //udate lineToRun
   
   /* Does autoscrolling if On */
-    if (scrollOn == true) {
-      delay(1000);
-      executeLine(line + 1);
+    if (scrollOn && up) {
+      delay(1500);
+      runNextLine();
     }
   }
   
+}
+
+void runNextLine(){
+  if(lineToRun > 0){
+    executeLine(lineToRun - 1, false);
+    executeLine(lineToRun, true);
+  } else {
+    executeLine(0, true);
+  }
+}
+
+
+void runLastLine(){
+    executeLine(lineToRun - 1, false);
+    executeLine(lineToRun - 2, true);
 }
 

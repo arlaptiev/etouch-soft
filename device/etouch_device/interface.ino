@@ -34,19 +34,19 @@ void interfaceLoop(){
   /* Turns autoscrolling on/off */
   if (scrollState == LOW && buttonControl == true) {   
     scrollOn = !scrollOn;
-    executeLine(lastLine);
+    runNextLine();
     buttonDelay();
   }
 
   /* Starts next line; if last line, it does nothing */
   if (forwardState == LOW && buttonControl == true && scrollOn == false) {
-    executeLine(lastLine + 1);
+    runNextLine();
     buttonDelay();
   }
 
   /* Starts previous line; if first line, it does nothing */
   if (backwardsState == LOW && buttonControl == true && scrollOn == false) {
-    executeLine(lastLine - 1);
+    runLastLine();
     buttonDelay();
   }
 
@@ -80,24 +80,25 @@ void interfaceLoop(){
   if (receivedMessage.length() > 0) {
     
     if (strcmp(receivedMessage.c_str(), "btn_forward")){
-      executeLine(lastLine + 1);
+      runNextLine();
       Serial.println(">> btn_forward <<");
     }
     
     else if (strcmp(receivedMessage.c_str(), "btn_back")){
-      executeLine(lastLine - 1);
+      runLastLine();
       Serial.println(">> btn_back <<");
     }
 
     else if (strcmp(receivedMessage.c_str(), "btn_autoscroll")){
       scrollOn = !scrollOn;
-      executeLine(lastLine);
+      runNextLine();
       Serial.println(">> btn_autoscroll <<");
     } 
 
     // If bluetooth module receives any value not listed above, it is just submitted text, not command
     else {
       message = receivedMessage;
+      runNextLine();
     }
     
   } 
