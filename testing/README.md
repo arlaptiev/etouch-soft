@@ -34,3 +34,10 @@ A2 -> brown
 B1 -> white
 B2 -> red
 
+
+WORKING CONFIGURATION:
+A1 -> black
+A2 -> brown
+B1 -> white
+B2 -> red
+
