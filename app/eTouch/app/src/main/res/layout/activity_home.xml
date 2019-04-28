@@ -65,7 +65,7 @@
         android:layout_marginBottom="24dp"
         android:background="@drawable/openbutton"
         android:fontFamily="@font/inter_ui_regular"
-        android:text="Connect"
+        android:text="Disconnected"
         android:textAllCaps="false"
         android:textColor="@color/colorPrimary"
         android:textSize="14dp"

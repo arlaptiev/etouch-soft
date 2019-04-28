@@ -54,18 +54,9 @@ void setup() {
   
   readingSetup();
   interfaceSetup();
-  
-  /*
-   * FOR DEBUGGING PURPOSES!! DELETE!!!!
-   */
-
-   pinMode(LED, OUTPUT);
-
-   /* END */
 }
 
 void loop() {
   /* Control buttons handling. */
   interfaceLoop();
 }
-

@@ -23,6 +23,7 @@ void readingSetup(){
   pinMode(latchPin, OUTPUT);
   pinMode(dataPin, OUTPUT); 
   pinMode(clockPin, OUTPUT);
+  pinMode(motorDirPin, OUTPUT);
   
   getSymbolsReady();
   
@@ -35,7 +36,7 @@ void getSymbolsReady() {
   digitalWrite(latchPin, LOW);
   
   for (int i = 0; i < nSymbols; i++) {
-    shiftOut(dataPin, clockPin, LSBFIRST, 0);
+    shiftOut(dataPin, clockPin, MSBFIRST, 0);
   }
   
   digitalWrite(latchPin, HIGH);
@@ -47,10 +48,11 @@ void getSymbolsReady() {
 /* Writes a given line of the text on the display */
 void executeLine(int line, bool up) {
 
+  digitalWrite(motorDirPin, LOW);
+
   /* Is added to value sent to shift register. Adds additional 0 or 1 to the 7th output depending on the direction */
-  int dirInt = 0;
   if(!up) {
-    dirInt = 64;
+    digitalWrite(motorDirPin, HIGH);
   }
   
   /* Checks if requested line is before the last line and after or equal to the first line(0) */
@@ -67,7 +69,12 @@ void executeLine(int line, bool up) {
     digitalWrite(latchPin, LOW);
     
     for (int i = 0; i < nSymbols; i++) {
-      shiftOut(dataPin, clockPin, LSBFIRST, mappedBraille.indexOf( message.charAt(line * nSymbols + i) ) + dirInt );
+      shiftOut(dataPin, clockPin, MSBFIRST, mappedBraille.indexOf( toupper(message.charAt(line * nSymbols + i) )) );
+      Serial.print("Symbol:");
+      Serial.println(message.charAt(line * nSymbols + i) );
+
+      Serial.print("Binary:");
+      Serial.println(mappedBraille.indexOf( toupper(message.charAt(line * nSymbols + i) )) );
     }
     
     digitalWrite(latchPin, HIGH);
@@ -78,6 +85,9 @@ void executeLine(int line, bool up) {
   /* Does autoscrolling if On */
     if (scrollOn && up) {
       delay(1500);
+      if(Serial.available()) {
+        return;
+      }
       runNextLine();
     }
   }
@@ -86,16 +96,22 @@ void executeLine(int line, bool up) {
 
 void runNextLine(){
   if(lineToRun > 0){
+    Serial.println();
+    Serial.println("ERASE LINE:");
     executeLine(lineToRun - 1, false);
+    Serial.println("PRINT LINE:");
     executeLine(lineToRun, true);
   } else {
+    Serial.println("FIRST LINE:");
     executeLine(0, true);
   }
 }
 
 
 void runLastLine(){
+    Serial.println();
+    Serial.println("ERASE LINE:");
     executeLine(lineToRun - 1, false);
+    Serial.println("PRINT LINE:");
     executeLine(lineToRun - 2, true);
 }
-

@@ -55,41 +55,28 @@ void interfaceLoop(){
 
   /* Puts together a receivedMessage char by char (one at a time) */
   while (Serial.available()) {
-    delay(10);  //small delay to allow input buffer to fill
+    delay(100);  //small delay to allow input buffer to fill
 
     char data = Serial.read();  //gets one byte from serial buffer
-    
-    if (data == ',') {
-      break;
-    }  //breaks out of capture loop
-
-    /*
-     * FOR DEBUGGING PURPOSES!! DELETE!!!!
-     */
-
-     if (data == '1') {
-      digitalWrite(LED, HIGH);
-     }
-
-     /* END */
     
     receivedMessage += data; 
   } 
 
+  //Serial.println(receivedMessage);
+
   /* Separates the commands from text input*/
   if (receivedMessage.length() > 0) {
-    
-    if (strcmp(receivedMessage.c_str(), "btn_forward")){
+    if (strcmp(receivedMessage.c_str(), "btn_forward\n") == 0){
       runNextLine();
       Serial.println(">> btn_forward <<");
     }
     
-    else if (strcmp(receivedMessage.c_str(), "btn_back")){
+    else if (strcmp(receivedMessage.c_str(), "btn_back\n") == 0){
       runLastLine();
       Serial.println(">> btn_back <<");
     }
 
-    else if (strcmp(receivedMessage.c_str(), "btn_autoscroll")){
+    else if (strcmp(receivedMessage.c_str(), "btn_autoscroll\n") == 0){
       scrollOn = !scrollOn;
       runNextLine();
       Serial.println(">> btn_autoscroll <<");
@@ -98,8 +85,12 @@ void interfaceLoop(){
     // If bluetooth module receives any value not listed above, it is just submitted text, not command
     else {
       message = receivedMessage;
+      lineToRun = 0;
+      Serial.println(message);
       runNextLine();
     }
+
+    receivedMessage = "";
     
   } 
 
@@ -114,4 +105,3 @@ void buttonDelay(){
   delay(500);
   buttonControl = true;
 }
-
