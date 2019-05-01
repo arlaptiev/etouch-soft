@@ -41,3 +41,5 @@ WORKING CONFIGURATION:
 * B1 -> white
 * B2 -> red
 
+Green drivers:
+B2 black, A2 brown make sound of turning
