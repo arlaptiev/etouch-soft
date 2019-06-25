@@ -25,13 +25,13 @@ void readingSetup(){
   pinMode(clockPin, OUTPUT);
   pinMode(motorDirPin, OUTPUT);
   
-  getSymbolsReady();
+  restartSymbols();
   
 }
 
 
 /* Setting all the symbols to initial status */
-void getSymbolsReady() {
+void clearSymbols() {
   
   digitalWrite(latchPin, LOW);
   
@@ -40,6 +40,32 @@ void getSymbolsReady() {
   }
   
   digitalWrite(latchPin, HIGH);
+  
+}
+
+/* Lowering all the stepper motors */
+void restartSymbols() {
+
+  digitalWrite(motorDirPin, HIGH);
+  
+  for (int j = 0; j < 200; j++) {
+
+      digitalWrite(latchPin, LOW);
+      
+      for (int i = 0; i < nSymbols; i++) {
+        shiftOut(dataPin, clockPin, MSBFIRST, 255);
+      }
+
+      digitalWrite(latchPin, HIGH);
+
+      delayMicroseconds(100);
+
+      clearSymbols();
+
+      delayMicroseconds(100);
+    }
+
+  digitalWrite(motorDirPin, LOW);
   
 }
 
@@ -66,25 +92,30 @@ void executeLine(int line, bool up) {
   
   
     /* Send binary to the cells */      
-    digitalWrite(latchPin, LOW);
-    
-    for (int i = 0; i < nSymbols; i++) {
-      shiftOut(dataPin, clockPin, MSBFIRST, mappedBraille.indexOf( toupper(message.charAt(line * nSymbols + i) )) );
-      Serial.print("Symbol:");
-      Serial.println(message.charAt(line * nSymbols + i) );
 
-      Serial.print("Binary:");
-      Serial.println(mappedBraille.indexOf( toupper(message.charAt(line * nSymbols + i) )) );
+    for (int j = 0; j < 200; j++) {
+
+      digitalWrite(latchPin, LOW);
+      
+      for (int i = 0; i < nSymbols; i++) {
+        shiftOut(dataPin, clockPin, MSBFIRST, mappedBraille.indexOf( toupper(message.charAt(line * nSymbols + i) )) );
+      }
+
+      digitalWrite(latchPin, HIGH);
+
+      delayMicroseconds(100);
+
+      clearSymbols();
+
+      delayMicroseconds(100);
     }
-    
-    digitalWrite(latchPin, HIGH);
     
 
     lineToRun = line + 1; //udate lineToRun
   
   /* Does autoscrolling if On */
     if (scrollOn && up) {
-      delay(1500);
+      delay(3000);
       if(Serial.available()) {
         return;
       }

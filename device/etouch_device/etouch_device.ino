@@ -29,17 +29,14 @@ int backwardsPin = 9; //Page down pin
 int backwardsState = 0;
 int scrollPin = 8; // Autoscrolling pin
 int scrollState = 0;
+int restartPin = 7; // Nulling pin
+int restartState = 0;
 
-/*
- * FOR DEBUGGING PURPOSES!! DELETE!!!!
- */
-int LED = 5;
-
- /* END */
+int motorDirPin = 5;
 
 
 /* Settings */
-byte nSymbols = 2; //Number of symbols on display
+byte nSymbols = 6; //Number of symbols on display
 
 
 /* Global variables */

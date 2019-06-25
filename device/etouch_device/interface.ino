@@ -20,6 +20,7 @@ void interfaceSetup(){
   pinMode(forwardPin, INPUT_PULLUP);
   pinMode(backwardsPin, INPUT_PULLUP);
   pinMode(scrollPin, INPUT_PULLUP);
+  pinMode(restartPin, INPUT_PULLUP);
   
 }
 
@@ -30,23 +31,35 @@ void interfaceLoop(){
   forwardState = digitalRead(forwardPin);
   backwardsState = digitalRead(backwardsPin);
   scrollState = digitalRead(scrollPin);
+  restartState = digitalRead(restartPin);
 
-  /* Turns autoscrolling on/off */
-  if (scrollState == LOW && buttonControl == true) {   
+  /* Turns autoscrolling on/off 
+  if (scrollState == HIGH && buttonControl == true) {   
+    Serial.println(">> btn_autoscroll <<");
     scrollOn = !scrollOn;
     runNextLine();
     buttonDelay();
   }
 
-  /* Starts next line; if last line, it does nothing */
-  if (forwardState == LOW && buttonControl == true && scrollOn == false) {
+  /* Starts next line; if last line, it does nothing 
+  if (forwardState == HIGH && buttonControl == true && scrollOn == false) {
+    Serial.println(">> btn_forward <<");
     runNextLine();
     buttonDelay();
   }
 
-  /* Starts previous line; if first line, it does nothing */
-  if (backwardsState == LOW && buttonControl == true && scrollOn == false) {
+  /* Starts previous line; if first line, it does nothing 
+  if (backwardsState == HIGH && buttonControl == true && scrollOn == false) {
+    Serial.println(">> btn_back <<");
     runLastLine();
+    buttonDelay();
+  }
+
+  /* Lowers all the stepper motors to the initial value 
+  if (restartState == HIGH && buttonControl == true) {
+    Serial.println(">> btn_restart <<");
+    scrollOn = false;
+    restartSymbols();
     buttonDelay();
   }
 
@@ -62,24 +75,22 @@ void interfaceLoop(){
     receivedMessage += data; 
   } 
 
-  //Serial.println(receivedMessage);
-
   /* Separates the commands from text input*/
   if (receivedMessage.length() > 0) {
     if (strcmp(receivedMessage.c_str(), "btn_forward\n") == 0){
       runNextLine();
-      Serial.println(">> btn_forward <<");
+      Serial.println(">> app: btn_forward <<");
     }
     
     else if (strcmp(receivedMessage.c_str(), "btn_back\n") == 0){
       runLastLine();
-      Serial.println(">> btn_back <<");
+      Serial.println(">> app: btn_back <<");
     }
 
     else if (strcmp(receivedMessage.c_str(), "btn_autoscroll\n") == 0){
       scrollOn = !scrollOn;
       runNextLine();
-      Serial.println(">> btn_autoscroll <<");
+      Serial.println(">> app: btn_autoscroll <<");
     } 
 
     // If bluetooth module receives any value not listed above, it is just submitted text, not command
